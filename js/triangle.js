@@ -9,33 +9,13 @@ console.log('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + 
 
 function getTriangleArea(a, h) {
     if ((a <= 0) || (h <= 0)) {
-        return 'Błąd! Nieprawidłowe dane wejściowe - a <= 0 || h <= 0';
+        console.log('Błąd! Nieprawidłowe dane wejściowe - a <= 0 || h <= 0');
     } else {
-        return (a * h / 2);
+        console.log('Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + ' wynosi: ' + (a * h / 2) + '.');
     }
 }
 
-function info(a, h, area) {
-    return 'Pole trójkąta o podstawie a = ' + a + ' i wysokości h = ' + h + ' wynosi: ' + area + '.';
-}
-
-var A = 10,
-    H = 6;
-console.log(info(A, H, getTriangleArea(A, H)));
-
-A = 5;
-H = 5;
-    
-var triangleArea;
-triangleArea = getTriangleArea(A, H);
-console.log(info(A, H, triangleArea));
-
-A = 7;
-H = 15;
-triangleArea = getTriangleArea(A, H);
-console.log(info(A, H, triangleArea));
-
-A = -2;
-H = 3;
-triangleArea = getTriangleArea(A, H);
-console.log(info(A, H, triangleArea));
+getTriangleArea(10, 6);
+getTriangleArea(5, 5);
+getTriangleArea(7, 15);
+getTriangleArea(-2, 3);
